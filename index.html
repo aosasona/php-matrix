@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+        * {
+            font-family: Poppins;
+            padding: 5px;
+        }
+        
+        form {
+            width: 70vw;
+            box-sizing: border-box;
+            border: 1.5px solid #222;
+            padding: 10px 50px 10px 50px;
+            padding-bottom: 20px;
+            text-align: left;
+            margin-top: 20vh;
+        }
+        
+        input {
+            display: block;
+            width: 80%;
+            border: 1.8px solid #222;
+            padding: 10px 20px 10px 20px;
+            font-size: 101%;
+        }
+        
+        input:focus {
+            outline-color: red;
+        }
+        
+        button {
+            margin-top: 15px;
+            padding: 10px 25px 10px 25px;
+            margin: 15px 0px 30px 0px;
+            background: black;
+            border: none;
+            color: white;
+            font-size: 102%;
+        }
+        
+        button:hover {
+            color: black;
+            background: orange;
+        }
+    </style>
+
+    <title>Matrix Testing System</title>
+    <base href="/php-matrix/">
+</head>
+
+<body>
+    <center>
+        <form action="matrix.php" method="POST" onsubmit="return true;" autocomplete="off">
+            <h1>Matrix Script Testing Interface</h1>
+            <input type="text" name="user" id="username" placeholder="Test Username">
+
+            <button type="submit" name="submit_data">Add User</button>
+        </form>
+    </center>
+</body>
+
+</html>
